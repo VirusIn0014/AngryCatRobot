@@ -64,6 +64,10 @@ RUN apt update && apt upgrade -y && \
 # Pypi package Repo upgrade
 RUN pip3 install --upgrade pip setuptools
 
+# Copy Python Requirements to /root/Mizuki
+RUN git clone -b shiken https://github.com/VirusIn0014/AngryCatRobot /root/Mizuki
+WORKDIR /root/Mizuki
+
 #Copy config file to /root/Mizuki/Mizuki
 COPY ./Mizuki/sample_config.py ./Mizuki/config.py* /root/Mizuki/Mizuki/
 
