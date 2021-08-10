@@ -10,7 +10,7 @@ class Config(object):
     
     API_ID = 3621722
     API_HASH = "1424ea0f4be038f55137774f9ba81c3d"
-    TOKEN = "BOT_TOKEN"
+    TOKEN = "1931181190:AAFV2z-gZgOmRl5fjjVwv_o9GDrI8NEHew8"
     OWNER_ID = 792109647
     OWNER_USERNAME = "Sawada"
     SUPPORT_CHAT = "AlwaysAngryCat"
