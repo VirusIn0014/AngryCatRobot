@@ -66,7 +66,6 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Mizuki
-RUN git clone -b shiken https://github.com/VirusIn0014/AngryCatRobot /root/Mizuki
 WORKDIR /root/Mizuki
 
 #Copy config file to /root/Mizuki/Mizuki
@@ -78,4 +77,4 @@ ENV PATH="/home/bot/bin:$PATH"
 RUN pip3 install -U -r requirements.txt
 
 # Starting Worker
-CMD ["python3","-m","Mizuki"]
+CMD python3 -m Mizuki
