@@ -66,6 +66,7 @@ RUN apt update && apt upgrade -y && \
 RUN pip3 install --upgrade pip setuptools
 
 # Copy Python Requirements to /root/Mizuki
+RUN git clone -b https://github.com/ImJanindu/Mizuki /root/Mizuki
 WORKDIR /root/Mizuki
 
 #Copy config file to /root/Mizuki/Mizuki
